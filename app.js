@@ -10,7 +10,7 @@ app.config(function($routeProvider, $locationProvider) {
   $routeProvider.otherwise({
     redirectTo: '/home'
   });
-
+ $locationProvider.html5Mode(true).hashPrefix('')
 });
 
 app.controller('mainController', function($routeParams, $location, $anchorScroll) {
